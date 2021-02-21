@@ -8,20 +8,19 @@ const retrieve = async () => {
     .get(url)
     .then(function(response) {
       console.log(response)
-      return response
+      const message = response.data.text
+      return message
     })
     .catch(function(error) {
       // handle error
-      console.log(`[api error]: ${error}`);
-      return [];
+      console.log(`[api error]: ${error}`)
+      return []
     })
-  // console.log(value)
-  // return value
 }
 
 function App() {
   const value = retrieve()
-  return <div>Hello {value}</div>;
+  return <div>{value}</div>
 }
 
-export default App;
+export default App
