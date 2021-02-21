@@ -29,10 +29,10 @@ class TopNav extends Component {
     };
 
     renderMenu = (menuConfig, index) => {
-        if (menuConfig.type == 'button') {
+        if (menuConfig.type === 'button') {
             return this.renderButton(menuConfig, index)
         }
-        if (menuConfig.type == 'dropdown') {
+        if (menuConfig.type === 'dropdown') {
             return this.renderDropDownMenu(menuConfig, index)
         }
     }
