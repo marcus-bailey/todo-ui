@@ -4,7 +4,6 @@ import apiConfig from 'config/api/index'
 
 
 const retrieve = () => {
-  // console.log(apiConfig.urls)
   const url = `${apiConfig.baseUrl}/message`
   return axios.get(url)
     .then(function(response) {
