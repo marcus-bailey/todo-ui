@@ -20,8 +20,7 @@ const retrieve = async () => {
 }
 
 function App() {
-  const value = retrieve()
-  return <div>{value}</div>
+  return <div>{retrieve()}</div>
 }
 
 export default App
