@@ -1,9 +1,13 @@
 import React from 'react';
 
+const retrieve = () => {
+  let { value } = await( await fetch(`/api/message`)).json()
+  return value
+}
+
 function App() {
   // const value = 'World';
-  let { value } = await( await fetch(`/api/message`)).json();
-  // document.querySelector('#name').textContent = text;
+  const value = retrieve()
   return <div>Hello {value}</div>;
 }
 
