@@ -1,0 +1,12 @@
+.container{
+  width: 60%;
+  margin:1rem auto;
+  /* box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.795); */
+  padding: 1rem;
+}
+
+.heading{
+  font-weight: 600;
+  background-color: aliceblue;
+  color: blue;
+}
