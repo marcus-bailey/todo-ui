@@ -1,5 +1,5 @@
 import React from 'react'
-import Home from './modules/home/Home'
+import Home from 'modules/home/Home'
 
 function App() {
   return <div><Home/></div>
