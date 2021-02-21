@@ -9,6 +9,7 @@ const retrieve = async () => {
     .then(function(response) {
       console.log(response)
       const message = response.data.text
+      console.log(message)
       return message
     })
     .catch(function(error) {
