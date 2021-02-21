@@ -2,6 +2,7 @@ import React from 'react';
 
 const retrieve = async () => {
   let { value } = await( await fetch(`/api/message`)).json()
+  console.log(value)
   return value
 }
 
