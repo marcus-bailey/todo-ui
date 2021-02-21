@@ -1,6 +1,6 @@
 import React from 'react';
 
-const retrieve = () => {
+const retrieve = async () => {
   let { value } = await( await fetch(`/api/message`)).json()
   return value
 }
